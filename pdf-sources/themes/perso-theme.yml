@@ -1,0 +1,94 @@
+font:
+  catalog:
+    Din Pro:
+      normal: dinpro-normal.ttf
+      italic: dinpro-italic.ttf
+      bold: dinpro-bold.ttf
+      bold_italic: dinpro-bold_italic.ttf
+base:
+  align: justify
+  font:
+    color: #000000
+    family: Din Pro
+    size: 12
+    size_large: 12.5
+    size_small: 10
+  line_height: 1.5
+page:
+  margin: [2.4cm, 3cm, 2.4cm, 3cm]
+heading:
+  font:
+    color: #967d4d
+    family: $base_font_family
+    style: bold
+title_page:
+  align: center
+  background:
+    image: image:../images/title-background-1.jpg[]
+  #logo:
+  #  image: image:../images/logo.png[align=left]
+  title:
+    top: 25%
+    font:
+      size: $heading_h1_font_size * 1.01
+      color: #967d4d
+      style: bold
+  subtitle:
+    font:
+      size: $heading_h1_font_size * 0.75
+      color: #967d4d
+      style: italic
+    line_height: 4
+  revision:
+    font:
+      size: $base_font_size_large
+    margin_top: 15
+image:
+  align: center
+header:
+  height: 2.5cm
+  line_height: 2
+  font_size: $base_font_size_small
+  recto_content:
+    left: image:../images/logo.png[width=100]
+    right: '{document-title}'
+  verso_content:
+    left: $header_recto_content_left
+    right: $header_recto_content_right
+footer:
+  height: 2cm
+  line_height: 2
+  font_size: $base_font_size_small
+  recto_content:
+    left: '{email}'
+    center: '{docdate}'
+    right: '{page-number} / {page-count}'
+  verso_content:
+    left: $footer_recto_content_left
+    center: $footer_recto_content_center
+    right: $footer_recto_content_right
+code:
+  font:
+    size: $base_font_size
+  background:
+    color: #DEDEDE
+  border:
+    color: #967d4d
+    radius: 2
+    width: 0.5
+example:
+  background:
+    color: #FDFDFD
+  border:
+    color: #EEE
+    radius: 0
+    width: 2
+table :
+  head_background_color: #6D6E71
+  head_font_color: #FFFFFF
+  odd_row_background_color: #EDF2F2
+  border_color: #D8D8CE
+  border_width: 0.2
+description_list:
+  term_font_style: bold
+caption_align: center

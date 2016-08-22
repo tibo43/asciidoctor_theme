@@ -1,0 +1,5 @@
+= Ascidoctor génération
+
+== PDF
+
+asciidoctor-pdf -a pdf-stylesdir=asciidoctor_theme/pdf-sources/themes -a pdf-style=perso -a pdf-fontsdir=asciidoctor_theme/pdf-sources/fonts  Report/Memory.adoc
