@@ -1,0 +1,70 @@
+@import "fonts/roboto-condensed";
+@import "settings/sqlitemplate";
+@import "components/asciidoc";
+@import "components/awesome-icons";
+
+h2, h3, h4, h5, h6 {
+  border-bottom: 1px solid $sect-divider-color;
+}
+body {
+  background: url(images/sqlitemplate/title-background.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-size: 40%;
+  padding-bottom: 100px;
+}
+
+h1{
+  /*background: #c05555;*/
+  /*color: #fff !important;*/
+  /*margin-bottom: 33px !important;*/
+}
+
+.sect1 {
+  padding-bottom: 0;
+}
+
+.author{
+  margin-top: 2.5rem;
+}
+
+.tableblock > code{
+  color: #fff;
+}
+
+[id="footer"]{
+    position: fixed !important;
+    bottom: 0;
+}
+
+[id="footer-text"]{
+  line-height: 2.4rem !important;
+  background: url(images/sqlitemplate/logo_fondnoir.png) no-repeat;
+  background-position: right;
+  background-size: 80px;
+}
+
+#toctitle {
+  color: #00406F;
+  font-weight: normal;
+  margin-top: 1.5em;
+}
+
+.sidebarblock {
+  border-color: #aaa; // why is this not honoring variable?
+}
+
+code {
+  @include radius(4px);
+}
+
+p.tableblock.header {
+  color: $table-row-font-color;
+}
+
+.literalblock,
+.listingblock {
+  & pre {
+    background: $pre-bg;
+  }
+}
