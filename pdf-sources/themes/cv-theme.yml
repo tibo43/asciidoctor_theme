@@ -1,0 +1,22 @@
+font:
+  catalog:
+    Din Pro:
+      normal: dinpro-normal.ttf
+      italic: dinpro-italic.ttf
+      bold: dinpro-bold.ttf
+      bold_italic: dinpro-bold_italic.ttf
+base:
+  align: justify
+  font:
+    color: #000000
+    family: Din Pro
+    size: 10
+    size_large: 12.5
+    size_small: 10
+  line_height: 1.2
+page:
+  margin: [1cm, 1cm, 1cm, 1cm]
+table :
+  odd_row_background_color: #FFFFFF
+  border_color: #FFFFFF
+  border_width: 0.2
