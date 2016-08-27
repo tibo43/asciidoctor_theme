@@ -12,21 +12,23 @@ base:
     family: Din Pro
     size: 10
     size_large: 12.5
-    size_small: 10
-  line_height: 1.2
+    size_small: 9
 page:
-  margin: [1cm, 0.5cm, 1cm, 0.5cm]
+  margin: [1cm, 0.75cm, 1cm, 0.75cm]
 heading:
   align: center
   font_family: $base_font_family
-  heading_margin_top: 1
-  heading_margin_bottom: 2
-  #font_color: 181818
+  margin_top: 0
+  margin_bottom: 12
+  font:
+    color: #967d4d
   h2_font_size: floor($base_font_size * 2.15)
   h3_font_size: round($base_font_size * 1.7)
   h4_font_size: $base_font_size_large
   line_height: 1
 table :
-  odd_row_background_color: #FFFFFF
   border_color: #FFFFFF
-  border_width: 0.2
+  border_width: 3
+  cell:
+    padding: [3,2,3,2]
+    line_height: 2
