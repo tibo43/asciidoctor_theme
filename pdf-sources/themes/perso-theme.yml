@@ -21,6 +21,7 @@ heading:
     color: #967d4d
     family: $base_font_family
     style: bold
+  h4_font_size: $base_font_size_large
 title_page:
   align: center
   background:
@@ -67,3 +68,15 @@ footer:
     right: $footer_recto_content_right
 toc:
   line_height: 1.5
+caption:
+  align: center
+table:
+  font_family: Din Pro
+  border_width: 0
+  border_color: #FFFFFF
+  grid_width: 4
+  grid_color: #FFFFFF
+  font_size: $base_font_size
+  cell:
+    line_height: 5
+    padding: [3, 0, 3, 0]
