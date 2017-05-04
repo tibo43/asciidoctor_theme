@@ -1,0 +1,82 @@
+font:
+  catalog:
+    Din Pro:
+      normal: dinpro-normal.ttf
+      italic: dinpro-italic.ttf
+      bold: dinpro-bold.ttf
+      bold_italic: dinpro-bold_italic.ttf
+base:
+  align: justify
+  font:
+    color: #000000
+    family: Din Pro
+    size: 12
+    size_large: 12.5
+    size_small: 10
+  line_height: 1.5
+page:
+  margin: [2.4cm, 3cm, 2.4cm, 3cm]
+heading:
+  font:
+    color: #cd0040
+    family: $base_font_family
+    style: bold
+  h4_font_size: $base_font_size_large
+title_page:
+  align: center
+  background:
+    image: image:../images/title_background_linagora.jpg[]
+  title:
+    top: 25%
+    font:
+      size: $heading_h1_font_size * 1.01
+      color: #cd0040
+      style: bold
+  subtitle:
+    font:
+      size: $heading_h1_font_size * 0.75
+      color: #cd0040
+      style: italic
+    line_height: 4
+  revision:
+    font:
+      size: $base_font_size_large
+    margin_top: 15
+image:
+  align: center
+header:
+  height: 2.5cm
+  line_height: 2
+  font_size: $base_font_size_small
+  recto_content:
+    left: image:../images/Logo_linagora.png[width=100]
+    right: '{document-title}'
+  verso_content:
+    left: $header_recto_content_left
+    right: $header_recto_content_right
+footer:
+  height: 2cm
+  line_height: 2
+  font_size: $base_font_size_small
+  recto_content:
+    left: '{email}'
+    center: '{docdate}'
+    right: '{page-number} / {page-count}'
+  verso_content:
+    left: $footer_recto_content_left
+    center: $footer_recto_content_center
+    right: $footer_recto_content_right
+toc:
+  line_height: 1.5
+caption:
+  align: center
+table:
+  font_family: Din Pro
+  border_width: 0
+  border_color: #FFFFFF
+  grid_width: 4
+  grid_color: #FFFFFF
+  font_size: $base_font_size
+  cell:
+    line_height: 5
+    padding: [3, 0, 3, 0]
